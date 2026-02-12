@@ -1,0 +1,44 @@
+html.rxd-dim-enabled,
+html.rxd-dim-enabled body {
+  background-color: rgb(21, 32, 43) !important;
+}
+
+html.rxd-dim-enabled {
+  --rxd-dim-bg: 21, 32, 43;
+  --rxd-dim-surface: 25, 39, 52;
+  --rxd-dim-border: 56, 68, 77;
+  --rxd-dim-text: 247, 249, 249;
+  --rxd-dim-muted: 139, 152, 165;
+
+  --color-background: var(--rxd-dim-bg) !important;
+  --color-nav-background: var(--rxd-dim-bg) !important;
+  --color-cell-background: var(--rxd-dim-bg) !important;
+  --color-timeline-background: var(--rxd-dim-bg) !important;
+  --color-twitter-blue: 29, 155, 240 !important;
+  --color-border: var(--rxd-dim-border) !important;
+  --color-border-muted: var(--rxd-dim-border) !important;
+  --color-text: var(--rxd-dim-text) !important;
+  --color-text-muted: var(--rxd-dim-muted) !important;
+}
+
+html.rxd-dim-enabled [data-testid='primaryColumn'],
+html.rxd-dim-enabled [data-testid='sidebarColumn'],
+html.rxd-dim-enabled [role='dialog'],
+html.rxd-dim-enabled [data-testid='AppTabBar_Home_Link'],
+html.rxd-dim-enabled main,
+html.rxd-dim-enabled header {
+  background-color: rgba(var(--rxd-dim-bg), 1) !important;
+}
+
+html.rxd-dim-enabled section,
+html.rxd-dim-enabled article,
+html.rxd-dim-enabled [data-testid='cellInnerDiv'] {
+  background-color: rgba(var(--rxd-dim-bg), 1) !important;
+  border-color: rgba(var(--rxd-dim-border), 1) !important;
+}
+
+html.rxd-dim-enabled a,
+html.rxd-dim-enabled span,
+html.rxd-dim-enabled div {
+  border-color: rgba(var(--rxd-dim-border), 1);
+}
