@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Restore X Dim Mode",
+  "description": "Adds back the old dim (dark blue) theme option in X/Twitter display settings.",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["dim.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
